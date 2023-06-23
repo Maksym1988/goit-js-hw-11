@@ -6,10 +6,10 @@ body {
   padding-bottom: 16px;
 }
 
-button {
-  border: 1px solid transparent;
-  border-radius: 6px;
-  cursor: pointer;
+img {
+  width: 100%;
+  height: 175px;
+  display: block;
 }
 
 .search-form {
@@ -40,11 +40,69 @@ button {
   outline: none;
 }
 
-.search-form button {
+.search-button {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
   margin: 0;
   background-color: #f0f0f0;
+}
+
+.gallery {
+  max-width: 1140px;
+  grid-gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 52px;
+  list-style: none;
+  display: grid;
+}
+
+.photo-card {
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px 2px #0040ff;
+}
+
+.info {
+  display: flex;
+  padding: 8px;
+  font-size: 12px;
+  background-color: #f0f0f0;
+}
+
+.info-item {
+  text-align: center;
+  margin: 0;
+}
+
+.info-item b {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.load-more {
+  color: #fff;
+  cursor: pointer;
+  background-color: #0040ff;
+  border: none;
+  border-radius: 6px;
+  margin-top: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  position: relative;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.hidden {
+  display: none;
 }
